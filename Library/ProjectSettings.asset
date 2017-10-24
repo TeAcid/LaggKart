@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 13
-  productGUID: a7e1f846a24f9ef4cb8fd94832a8b4a0
+  productGUID: 41b710a80a13d494ca39accc0c68fb93
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -12,7 +12,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Lagg Kart
+  productName: LaggKartNew
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -521,14 +521,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Lagg Kart
+  metroPackageName: LaggKartNew
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Lagg Kart
+  metroApplicationDescription: LaggKartNew
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -603,9 +603,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: ba9cb37a-2453-4551-8b45-f5b9a1779d9b
-  projectName: Lagg Kart
-  organizationId: iacid
+  cloudProjectId: 1537c22b-01be-47e4-83c1-ce6d50351b24
+  projectName: LaggKartNew
+  organizationId: ludva
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
