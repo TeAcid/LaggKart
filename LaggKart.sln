@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart", "Assembly-CSharp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart", "Assembly-CSharp-Editor-firstpass.csproj", "{B95F0E78-E641-5E28-C2EA-4C3A43F12C73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart", "Assembly-CSharp-Editor.csproj", "{8053493C-2A9E-3B78-9B75-AEE2E086C193}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{B95F0E78-E641-5E28-C2EA-4C3A43F12C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B95F0E78-E641-5E28-C2EA-4C3A43F12C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B95F0E78-E641-5E28-C2EA-4C3A43F12C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8053493C-2A9E-3B78-9B75-AEE2E086C193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8053493C-2A9E-3B78-9B75-AEE2E086C193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8053493C-2A9E-3B78-9B75-AEE2E086C193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8053493C-2A9E-3B78-9B75-AEE2E086C193}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
