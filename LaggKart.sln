@@ -1,13 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart", "Assembly-CSharp-firstpass.csproj", "{A50B92A6-C04F-E298-C3E9-21BC9FB2BA83}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart.Plugins", "LaggKart.Plugins.csproj", "{14CED30A-C0CC-9380-BE7A-F2CF23757674}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart", "Assembly-CSharp.csproj", "{72493F61-0C12-2C9D-8B9A-C081D0503621}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart", "LaggKart.csproj", "{69652A3E-A718-2380-43DB-FFE1D793B568}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart", "Assembly-CSharp-Editor-firstpass.csproj", "{B95F0E78-E641-5E28-C2EA-4C3A43F12C73}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart", "Assembly-CSharp-Editor.csproj", "{8053493C-2A9E-3B78-9B75-AEE2E086C193}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart.Editor.Plugins", "LaggKart.Editor.Plugins.csproj", "{06007E3E-D1ED-1A46-78D6-44FFAD476265}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,27 +13,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A50B92A6-C04F-E298-C3E9-21BC9FB2BA83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A50B92A6-C04F-E298-C3E9-21BC9FB2BA83}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A50B92A6-C04F-E298-C3E9-21BC9FB2BA83}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A50B92A6-C04F-E298-C3E9-21BC9FB2BA83}.Release|Any CPU.Build.0 = Release|Any CPU
-		{72493F61-0C12-2C9D-8B9A-C081D0503621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72493F61-0C12-2C9D-8B9A-C081D0503621}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72493F61-0C12-2C9D-8B9A-C081D0503621}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72493F61-0C12-2C9D-8B9A-C081D0503621}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B95F0E78-E641-5E28-C2EA-4C3A43F12C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B95F0E78-E641-5E28-C2EA-4C3A43F12C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B95F0E78-E641-5E28-C2EA-4C3A43F12C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B95F0E78-E641-5E28-C2EA-4C3A43F12C73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8053493C-2A9E-3B78-9B75-AEE2E086C193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8053493C-2A9E-3B78-9B75-AEE2E086C193}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8053493C-2A9E-3B78-9B75-AEE2E086C193}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8053493C-2A9E-3B78-9B75-AEE2E086C193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14CED30A-C0CC-9380-BE7A-F2CF23757674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14CED30A-C0CC-9380-BE7A-F2CF23757674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14CED30A-C0CC-9380-BE7A-F2CF23757674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14CED30A-C0CC-9380-BE7A-F2CF23757674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69652A3E-A718-2380-43DB-FFE1D793B568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69652A3E-A718-2380-43DB-FFE1D793B568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69652A3E-A718-2380-43DB-FFE1D793B568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69652A3E-A718-2380-43DB-FFE1D793B568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06007E3E-D1ED-1A46-78D6-44FFAD476265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06007E3E-D1ED-1A46-78D6-44FFAD476265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06007E3E-D1ED-1A46-78D6-44FFAD476265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06007E3E-D1ED-1A46-78D6-44FFAD476265}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

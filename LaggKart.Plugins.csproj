@@ -274,6 +274,8 @@
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\Mudguard.cs" />
+    <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\Road_detection.cs" />
+    <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\Rocket_launcher.cs" />
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
