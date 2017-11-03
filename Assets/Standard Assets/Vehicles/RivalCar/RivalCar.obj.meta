@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: e4bdee61f94138c4e819c144548bbbf1
+timeCreated: 1509650099
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Car_Car_auv
+    100002: Car_ReverseLights
+    100004: //RootNode
+    100006: Wheel1_cylinder3_auv
+    100008: Wheel2_cylinder3_auv
+    100010: Wheel3_cylinder3_auv
+    100012: Wheel4_cylinder3_auv
+    400000: Car_Car_auv
+    400002: Car_ReverseLights
+    400004: //RootNode
+    400006: Wheel1_cylinder3_auv
+    400008: Wheel2_cylinder3_auv
+    400010: Wheel3_cylinder3_auv
+    400012: Wheel4_cylinder3_auv
+    2300000: Car_Car_auv
+    2300002: Car_ReverseLights
+    2300004: Wheel1_cylinder3_auv
+    2300006: Wheel2_cylinder3_auv
+    2300008: Wheel3_cylinder3_auv
+    2300010: Wheel4_cylinder3_auv
+    3300000: Car_Car_auv
+    3300002: Car_ReverseLights
+    3300004: Wheel1_cylinder3_auv
+    3300006: Wheel2_cylinder3_auv
+    3300008: Wheel3_cylinder3_auv
+    3300010: Wheel4_cylinder3_auv
+    4300000: Car_Car_auv
+    4300002: Car_ReverseLights
+    4300004: Wheel1_cylinder3_auv
+    4300006: Wheel2_cylinder3_auv
+    4300008: Wheel3_cylinder3_auv
+    4300010: Wheel4_cylinder3_auv
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Car_Car_auvMat
+    second: {fileID: 2100000, guid: b07c0ae55ec5f0845a24d835422380ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Car_ReverseLightsMat
+    second: {fileID: 2100000, guid: 9dec97e9e34581a4e840252f3e3dd276, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wheel1_cylinder3_auvMat
+    second: {fileID: 2100000, guid: f310e6f08c2564f4d97724423c69f5ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wheel2_cylinder3_auvMat
+    second: {fileID: 2100000, guid: e52d4793ab620ab4aa1105cbb4bd3f11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wheel3_cylinder3_auvMat
+    second: {fileID: 2100000, guid: a632b38023b4833428cc28181868b56b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wheel4_cylinder3_auvMat
+    second: {fileID: 2100000, guid: 8f06805c0105fcd499c371bc497691d0, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

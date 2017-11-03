@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Vehicles.Car;
 
 public class Rocket_launcher : MonoBehaviour {
 
@@ -17,7 +18,6 @@ public class Rocket_launcher : MonoBehaviour {
     void Fire()
     {
         rocket_spawn = Player.transform;
-        rocket_spawn.Translate(0, 1.5f, 0);
         var rocket = (GameObject)Instantiate(Rocket, rocket_spawn.position, rocket_spawn.rotation);
         rocket.GetComponent<Rigidbody>().velocity = rocket.transform.forward * 50;
         Destroy(rocket, 5.0f);

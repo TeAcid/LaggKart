@@ -16,6 +16,14 @@ namespace UnityStandardAssets.Vehicles.Car
         KPH
     }
 
+    public enum PowerupType
+    {
+        None,
+        Rocket,
+        Shield,
+        Oil
+    }
+
     public class CarController : MonoBehaviour
     {
         [SerializeField] private CarDriveType m_CarDriveType = CarDriveType.FourWheelDrive;
@@ -36,6 +44,7 @@ namespace UnityStandardAssets.Vehicles.Car
         [SerializeField] private float m_RevRangeBoundary = 1f;
         [SerializeField] private float m_SlipLimit;
         [SerializeField] private float m_BrakeTorque;
+        [SerializeField] private PowerupType m_PowerupType;
 
         private Quaternion[] m_WheelMeshLocalRotations;
         private Vector3 m_Prevpos, m_Pos;
@@ -362,6 +371,11 @@ namespace UnityStandardAssets.Vehicles.Car
                 }
             }
             return false;
+        }
+
+        public void setPowerUp(PowerupType powerUp)
+        {
+            m_PowerupType = powerUp;
         }
     }
 }
