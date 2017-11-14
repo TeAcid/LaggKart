@@ -2495,7 +2495,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 290049871}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48.6, y: 3.33, z: 131.09}
+  m_LocalPosition: {x: 49.33, y: 3.33, z: 134.61}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3751,6 +3751,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 463019131}
+  - component: {fileID: 463019132}
   m_Layer: 0
   m_Name: Wheel_FrontRight
   m_TagString: Untagged
@@ -3772,6 +3773,18 @@ Transform:
   m_Father: {fileID: 1785852519}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &463019132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 463019130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1653e881915147840b64d09a659576f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetWheel: {fileID: 56638888}
 --- !u!1001 &467715479
 Prefab:
   m_ObjectHideFlags: 0
@@ -5204,9 +5217,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 1294895593}
-  maxSteerAngle: 25
+  maxSteerAngle: 40
   wheelFL: {fileID: 2122655078}
   wheelFR: {fileID: 56638888}
+  wheelRL: {fileID: 2071696093}
+  wheelRR: {fileID: 50371914}
+  maxMotorTorque: 60000
+  currentSpeed: 0
+  maxSpeed: 220
+  maxBreakTorque: 120000
+  centerOfMass: {x: 0, y: -0.2, z: 0}
+  isBreaking: 1
+  sensorLength: 3
 --- !u!114 &635696494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9300,6 +9322,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1328104317}
+  - component: {fileID: 1328104318}
   m_Layer: 0
   m_Name: Wheel_RearRight
   m_TagString: Untagged
@@ -9321,6 +9344,18 @@ Transform:
   m_Father: {fileID: 1785852519}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1328104318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1328104316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1653e881915147840b64d09a659576f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetWheel: {fileID: 50371914}
 --- !u!1 &1329470845 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 157746, guid: 2a6b0c491d6b87d41ba699ccaf7834fd, type: 2}
@@ -12145,6 +12180,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1712334501}
+  - component: {fileID: 1712334502}
   m_Layer: 0
   m_Name: Wheel_FrontLeft
   m_TagString: Untagged
@@ -12166,6 +12202,18 @@ Transform:
   m_Father: {fileID: 1785852519}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1712334502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1712334500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1653e881915147840b64d09a659576f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetWheel: {fileID: 2122655078}
 --- !u!1001 &1716862906
 Prefab:
   m_ObjectHideFlags: 0
@@ -12918,6 +12966,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1835204287}
+  - component: {fileID: 1835204288}
   m_Layer: 0
   m_Name: Wheel_RearLeft
   m_TagString: Untagged
@@ -12939,6 +12988,18 @@ Transform:
   m_Father: {fileID: 1785852519}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1835204288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1835204286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1653e881915147840b64d09a659576f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetWheel: {fileID: 2071696093}
 --- !u!1001 &1836136252
 Prefab:
   m_ObjectHideFlags: 0

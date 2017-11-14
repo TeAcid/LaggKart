@@ -233,6 +233,7 @@
   <ItemGroup>
     <Compile Include="Assets\AIDriving.cs" />
     <Compile Include="Assets\Importi\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
+    <Compile Include="Assets\Scripts\AI_CarWheel.cs" />
     <Compile Include="Assets\Scripts\AI_Driving.cs" />
     <Compile Include="Assets\Scripts\AI_Path.cs" />
     <Compile Include="Assets\Scripts\Collision_detection.cs" />
