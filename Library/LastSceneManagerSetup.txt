@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scena_za_brezveze.unity
+- path: Assets/MainMenuScene.unity
   isLoaded: 1
   isActive: 1
