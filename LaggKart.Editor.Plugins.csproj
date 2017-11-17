@@ -294,6 +294,9 @@
     <None Include="Assets\Importi\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort_Transparent.shader" />
     <None Include="Assets\Importi\Lava_Flowing_Shader\Shaders\Unlit_Lava_Simple.shader" />
     <None Include="Assets\Importi\laxer tree pkg\README.txt" />
+    <None Include="Assets\MainMenu\Fonts\Jupiter\LICENSE.txt" />
+    <None Include="Assets\MainMenu\Materials\UI-Default-No-Alpha.shader" />
+    <None Include="Assets\MainMenu\Textures and Sprites\SF UI\Background\LICENSE.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />

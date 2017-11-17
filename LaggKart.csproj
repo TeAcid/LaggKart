@@ -238,6 +238,20 @@
     <Compile Include="Assets\Scripts\AI_Path.cs" />
     <Compile Include="Assets\Scripts\Collision_detection.cs" />
     <Compile Include="Assets\Scripts\LapCounter.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\ActiveStateToggler.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\ApplicationManager.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\ChangeColor.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\DragMe.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\DragPanel.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\DropMe.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\MenuSelectOnInput.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\PanelManager.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\QuitOnClick.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\ResizePanel.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\ScrollDetailTexture.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\ShowSceneOnClick.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\ShowSliderValue.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\TiltWindow.cs" />
     <Compile Include="Assets\Scripts\Offroad.cs" />
     <Compile Include="Assets\Scripts\Rocket_collision.cs" />
   </ItemGroup>
@@ -248,6 +262,9 @@
     <None Include="Assets\Importi\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort_Transparent.shader" />
     <None Include="Assets\Importi\Lava_Flowing_Shader\Shaders\Unlit_Lava_Simple.shader" />
     <None Include="Assets\Importi\laxer tree pkg\README.txt" />
+    <None Include="Assets\MainMenu\Fonts\Jupiter\LICENSE.txt" />
+    <None Include="Assets\MainMenu\Materials\UI-Default-No-Alpha.shader" />
+    <None Include="Assets\MainMenu\Textures and Sprites\SF UI\Background\LICENSE.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
