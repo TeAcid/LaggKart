@@ -237,6 +237,7 @@
     <Compile Include="Assets\Scripts\AI_Driving.cs" />
     <Compile Include="Assets\Scripts\AI_Path.cs" />
     <Compile Include="Assets\Scripts\Collision_detection.cs" />
+    <Compile Include="Assets\Scripts\LapCounter.cs" />
     <Compile Include="Assets\Scripts\Offroad.cs" />
     <Compile Include="Assets\Scripts\Rocket_collision.cs" />
   </ItemGroup>

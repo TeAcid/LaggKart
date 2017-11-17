@@ -7,6 +7,7 @@ TagManager:
   - Car
   - Proga
   - rocket
+  - Terrain
   layers:
   - Default
   - TransparentFX

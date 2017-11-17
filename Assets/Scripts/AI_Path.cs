@@ -6,6 +6,7 @@ public class AI_Path : MonoBehaviour {
 
     public Color lineColor;
     private List<Transform> nodes = new List<Transform>();
+    public float sphereRadius = 10f;
 
     void OnDrawGizmosSelected()
     {
@@ -35,7 +36,7 @@ public class AI_Path : MonoBehaviour {
             }
 
             Gizmos.DrawLine(previousNode, currentNode);
-            Gizmos.DrawWireSphere(currentNode, 5.0f);
+            Gizmos.DrawWireSphere(currentNode, sphereRadius);
         }
     }
 }
