@@ -38,7 +38,7 @@ public class LeaderBoardSample : MonoBehaviour {
 
         this.dl.LoadScores();
 
-        dl.AddScore("Anja", 1);
+        //dl.AddScore("Anja", 1);
     }
 
 	void Update () 
