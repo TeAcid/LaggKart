@@ -147,7 +147,7 @@ namespace UnityStandardAssets.Vehicles.Car
             }
 
             //clamp input values
-            steering = Mathf.Clamp(steering, -1, 1);
+            steering = Mathf.Clamp(steering, -0.5f, 0.5f);
             AccelInput = accel = Mathf.Clamp(accel, 0, 1);
             BrakeInput = footbrake = -1*Mathf.Clamp(footbrake, -1, 0);
             handbrake = Mathf.Clamp(handbrake, 0, 1);
@@ -155,8 +155,8 @@ namespace UnityStandardAssets.Vehicles.Car
             //Set the steer on the front wheels.
             //Assuming that wheels 0 and 1 are the front wheels.
             m_SteerAngle = steering*m_MaximumSteerAngle;
-            m_WheelColliders[0].steerAngle = m_SteerAngle;
-            m_WheelColliders[1].steerAngle = m_SteerAngle;
+            m_WheelColliders[0].steerAngle = m_SteerAngle * 7.5f;
+            m_WheelColliders[1].steerAngle = m_SteerAngle * 7.5f;
 
             SteerHelper();
             ApplyDrive(accel, footbrake);

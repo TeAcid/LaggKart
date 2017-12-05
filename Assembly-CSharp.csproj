@@ -52,11 +52,16 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AIDriving.cs" />
+     <Compile Include="Assets\dreamlo\dreamloLeaderBoard.cs" />
+     <Compile Include="Assets\dreamlo\dreamloPromoCode.cs" />
+     <Compile Include="Assets\dreamlo\LeaderBoardSample.cs" />
      <Compile Include="Assets\Importi\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
      <Compile Include="Assets\Scripts\AI_CarWheel.cs" />
      <Compile Include="Assets\Scripts\AI_Driving.cs" />
      <Compile Include="Assets\Scripts\AI_Path.cs" />
      <Compile Include="Assets\Scripts\Collision_detection.cs" />
+     <Compile Include="Assets\Scripts\DisplayGameTimeChange.cs" />
+     <Compile Include="Assets\Scripts\LapCounter.cs" />
      <Compile Include="Assets\Scripts\MainMenu\ActiveStateToggler.cs" />
      <Compile Include="Assets\Scripts\MainMenu\ApplicationManager.cs" />
      <Compile Include="Assets\Scripts\MainMenu\ChangeColor.cs" />
@@ -73,6 +78,7 @@
      <Compile Include="Assets\Scripts\MainMenu\TiltWindow.cs" />
      <Compile Include="Assets\Scripts\Offroad.cs" />
      <Compile Include="Assets\Scripts\Rocket_collision.cs" />
+     <None Include="Assets\dreamlo\README_FIRST.txt" />
      <None Include="Assets\Importi\Lava_Flowing_Shader\Shaders\Unlit_Lava_Simple.shader" />
      <None Include="Assets\Importi\Lava_Flowing_Shader\Shaders\Diffuse_Lava_Distort.shader" />
      <None Include="Assets\Importi\laxer tree pkg\README.txt" />

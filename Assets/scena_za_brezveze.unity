@@ -5936,7 +5936,7 @@ MonoBehaviour:
   mediumPath: {fileID: 2093422296}
   hardPath: {fileID: 1209630823}
   maxSteerAngle: 40
-  Difficulty: 0
+  Difficulty: 2
   wheelFL: {fileID: 2122655078}
   wheelFR: {fileID: 56638888}
   wheelRL: {fileID: 2071696093}
