@@ -8,6 +8,11 @@ TagManager:
   - Proga
   - rocket
   - Terrain
+  - RaceCamera
+  - CameraFollow
+  - HindCamera
+  - HindCameraView
+  - AltCamera
   layers:
   - Default
   - TransparentFX
