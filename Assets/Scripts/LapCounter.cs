@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class LapCounter : MonoBehaviour {
     public Transform path;
-    private List<Transform> nodes;
-    private int currentNode = 0;
-    private int laps = 0;
+    public List<Transform> nodes;
+    public int currentNode = 0;
+    public int laps = 0;
 
     // Use this for initialization
     void Start () {

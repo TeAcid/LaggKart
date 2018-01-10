@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart – kopija.Plugins", "LaggKart – kopija.Plugins.csproj", "{D952ACAF-1DA1-647A-142C-8E6B0020B89E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart – kopija", "LaggKart – kopija.csproj", "{E595CFA9-19F1-04F3-BB73-983E1811C2F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart – kopija.Editor.Plugins", "LaggKart – kopija.Editor.Plugins.csproj", "{987FF810-C6C8-750E-FE6E-178609B5DD29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D952ACAF-1DA1-647A-142C-8E6B0020B89E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D952ACAF-1DA1-647A-142C-8E6B0020B89E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D952ACAF-1DA1-647A-142C-8E6B0020B89E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D952ACAF-1DA1-647A-142C-8E6B0020B89E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E595CFA9-19F1-04F3-BB73-983E1811C2F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E595CFA9-19F1-04F3-BB73-983E1811C2F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E595CFA9-19F1-04F3-BB73-983E1811C2F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E595CFA9-19F1-04F3-BB73-983E1811C2F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987FF810-C6C8-750E-FE6E-178609B5DD29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987FF810-C6C8-750E-FE6E-178609B5DD29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987FF810-C6C8-750E-FE6E-178609B5DD29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987FF810-C6C8-750E-FE6E-178609B5DD29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
