@@ -7,6 +7,20 @@ TagManager:
   - Car
   - Proga
   - rocket
+  - nails
+  - PU_shield
+  - PU_rocket
+  - PU_nails
+  - PU_star
+  - PU_fake
+  - Checkpoint
+  - Player_collider
+  - Enemy
+  - Star_rocket
+  - Powerup
+  - WarZone
+  - FirstAid
+  - rocketE
   layers:
   - Default
   - TransparentFX

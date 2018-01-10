@@ -23,6 +23,7 @@ public class AI_Driving : MonoBehaviour {
     [Header("Sensors")]
     public float sensorLength = 5f;
 
+    //public int LifePoints = 100;
 
     // Use this for initialization
     private void Start () {
@@ -114,7 +115,7 @@ public class AI_Driving : MonoBehaviour {
             Debug.DrawLine(sensorStartPos, hit.point, Color.red);
         }
         //Debug.DrawLine(sensorStartPos, transform.forward, Color.blue);
-        print("sensorStartPos:" + sensorStartPos);
+        //print("sensorStartPos:" + sensorStartPos);
         //Debug.DrawRay(sensorStartPos, hit.point);
     }
 }
