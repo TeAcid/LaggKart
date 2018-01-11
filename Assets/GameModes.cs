@@ -1,8 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using UnityEngine;
 
 public class GameModes : MonoBehaviour {
+
+    public class Rezultat
+    {
+        public string ime;
+        public int tocke;
+    }
 
     public bool TimeAttack = false;
     public bool Warzone = false;
@@ -12,11 +21,12 @@ public class GameModes : MonoBehaviour {
     public static bool wz = false;
     public static bool h2h = false;
     public static bool sg = false;
+    public static bool game_ended = false;
 
     public bool GameTimer = true;
     public float cas = 0.0f;
 
-    public float time_left = 300.0f;
+    public float time_left = 600.0f;
 
     Vector3[] spawn_points = new Vector3[5]; //Spawn points za avte
     Vector3 sp1 = new Vector3(38.592f, 2.5f, 103.6f);
@@ -55,20 +65,16 @@ public class GameModes : MonoBehaviour {
     {
         pu.enabled = false;
         rl.enabled = true;
-        //vsak avto ma rocket launcher - en hit je -10 lifepoints, obstajajo life PU (+15), 3 rivali
-        //vsak krog +10 LP
     }
 
     public void H2h()
     {
         rl.enabled = false;
         pu.enabled = true;
-        //en rival, standardni PU
     }
 
     public void Standard_game()
     {
-        //5 rivalov, standardni PU, 3 krogi
         for (int i = 0; i < spawn_points.Length; i++)
         {
             Instantiate(enemy.transform, spawn_points[i], Quaternion.identity);
@@ -136,35 +142,79 @@ public class GameModes : MonoBehaviour {
             sg = true;
             h2h = false;
         }
+
+        time_left = 600f;
     }
 
+    public List<Rezultat> rezultati = new List<Rezultat>();
 
     void OnGUI()
     {
         if (gameover)
         {
-            GUI.skin.label.fontSize = 130;
-            GUI.color = Color.red;
-            GUI.Label(new Rect(480, 220, 550, 550), "Game Over");
+            GUI.skin.label.fontSize = 40;
+            GUI.color = Color.black;
+            GUI.Label(new Rect(280, 20, 550, 550), "Game Over");
+            for(int i = 0; i < rezultati.Count; i++)
+            {
+                GUI.Label(new Rect((280), 80, 1500, 1000), zapis);
+            }
         }
     }
+
+    private string Ustvari_string()
+    {
+        string str = "";
+        if (counter == 0)
+        {
+            string prebrano = File.ReadAllText("C:/Users/lukas/Desktop/rezultati_unity.txt");
+            string[] tmp1 = prebrano.Split('/');
+            for (int i = 0; i < 5; i++)
+            {
+                string[] tmp2 = tmp1[i].Split('|');
+                Rezultat nov = new Rezultat();
+                nov.ime = tmp2[0];
+                nov.tocke = Int32.Parse(tmp2[1]);
+                rezultati.Add(nov);
+            }
+
+            rezultati = rezultati.OrderBy(r => r.tocke).ToList();
+            rezultati.Reverse();
+
+            for (int i = 0; i < rezultati.Count; i++)
+            {
+                Debug.Log((i + 1) + " .. " + rezultati[i].ime + " .. " + rezultati[i].tocke);
+                str += (i + 1) + " : " + rezultati[i].ime + " ...... " + rezultati[i].tocke.ToString() + "\n";
+            }
+        }
+        counter++;
+        return str;
+    }
+
+    public string zapis = "";
+    public int counter = 0;
 
     private void Update()
     {
         cas = Player_checkpoints.time;
         //Debug.Log(cas);
 
-        //time_left -= Time.unscaledDeltaTime;
+        time_left -= Time.unscaledDeltaTime;
 
         //Debug.Log(time_left);
-        if(time_left < 0.0f)
+        if(time_left < 0.0f && (GameModes.wz == true))
         {
+            if(counter == 0)
+                zapis = Ustvari_string();
+
             Time.timeScale = 0;
             Debug.Log(time_left);
             gameover = true;
-            if (time_left < -3.0f)
+            game_ended = true;
+            if (time_left < -5.0f)
             {
                 gameover = false;
+                game_ended = false;
                 Time.timeScale = 1;
                 Application.LoadLevel(Application.loadedLevel);
             }

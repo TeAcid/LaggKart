@@ -38,11 +38,14 @@ public class LifePoints_P : MonoBehaviour {
         {
             Destroy(this);
         }
-        if(gamepoints != tmp)
+        if(gamepoints != tmp )
         {
             int index = Player_checkpoints.active_checkpoint;
             Vector3 x = new Vector3(Player_checkpoints.checkpoints[index].transform.position.x, 2.1f, Player_checkpoints.checkpoints[index].transform.position.z);
-            Instantiate(enemy, x, Player_checkpoints.checkpoints[index].transform.rotation);
+            //Instantiate(enemy, x, Player_checkpoints.checkpoints[index].transform.rotation);
+            //enemy.GetComponent<AIDriving>().enabled = true;
+            //enemy.GetComponent<LifePoints_E>().enabled = true;
+            enemy.transform.position = x;
             tmp = gamepoints;
         }
 	}

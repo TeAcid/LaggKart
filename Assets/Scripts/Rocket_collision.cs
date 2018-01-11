@@ -72,7 +72,7 @@ public class Rocket_collision : MonoBehaviour {
         if (halo.enabled == enabled)
             shield = true;
 
-        if (start_timer)
+        if (start_timer && GameModes.wz == false)
         {
             remaining_time -= 0.01f;
             if (nailz == true)

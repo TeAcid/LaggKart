@@ -28,6 +28,8 @@ public class Player_checkpoints : MonoBehaviour {
 
     public GameModes gm;
 
+    public int counter = -1;
+
     void Start() {
         powerup = GameObject.FindGameObjectWithTag("Powerup");
         warzone = GameObject.FindGameObjectWithTag("WarZone");
@@ -102,13 +104,10 @@ public class Player_checkpoints : MonoBehaviour {
                 {
                     if (index == 0)
                     {
+                        counter++;
                         time = 0.0f;
                         startTimer = true;
-                    }
-                    if(index == 1)
-                    {
                         Debug.Log("Cas kroga : " + time + " s");
-                        time = 0.0f;
                     }
                 }
 
@@ -173,5 +172,10 @@ public class Player_checkpoints : MonoBehaviour {
 
         if (startTimer)
             time += Time.deltaTime;
+
+        if(counter == 3)
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
 	}
 }

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class LifePoints_E : MonoBehaviour {
 
+    AIDriving ad;
+    LifePoints_E lpE;
+
     public LifePoints_P lp_player;
     public GameObject enemy;
     public static float x;
@@ -14,6 +17,7 @@ public class LifePoints_E : MonoBehaviour {
     public GameObject player;
 
     private float time = 1.0f;
+    public static bool move_enemy = false;
 
     // Use this for initialization
     void Start ()
@@ -22,13 +26,14 @@ public class LifePoints_E : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("Player");
         Rocket = (GameObject)Resources.Load("RocketE");
         x = LifePoints_P.lifepoints_enemy;
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "rocket")
         {
-            Debug.Log(x);
+            //Debug.Log(x);
             x -= 80;
         }
     }
@@ -49,16 +54,18 @@ public class LifePoints_E : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         time = time - Time.deltaTime;
-        if (x < 1)
-        {
-            LifePoints_P.gamepoints += 100;
-            Debug.Log("Gamepoints = " + LifePoints_P.gamepoints);
-            Destroy(enemy);
-        }
         if (time < 0.0f && GameModes.wz == true)
         {
             Calculate_angle();
             time = 1.0f;
+        }
+        if (x < 1 && GameModes.wz == true)
+        {
+            LifePoints_P.gamepoints += 100;
+            Debug.Log("Gamepoints = " + LifePoints_P.gamepoints);
+            //Destroy(enemy);
+            move_enemy = true;
+            x = 100;
         }
     }
 }

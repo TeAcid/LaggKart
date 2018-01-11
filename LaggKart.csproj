@@ -242,6 +242,7 @@
     <Compile Include="Assets\Scripts\Poweup_shield.cs" />
     <Compile Include="Assets\Scripts\Rocket_collision.cs" />
     <Compile Include="Assets\Star_rocket_PU.cs" />
+    <Compile Include="Assets\Username.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HQ Tools Nails\Readme.txt" />

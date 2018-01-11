@@ -18,7 +18,7 @@ public class Powerups : MonoBehaviour {
     bool isActive_rocket = false;
     bool isActive_fake = false;
 
-    float timeleft = 10;
+    float timeleft = 100000;
     int starCounter = 0;
 
     
@@ -37,7 +37,7 @@ public class Powerups : MonoBehaviour {
     {
         Debug.Log("ŠILD EKTIV");
         Behaviour halo = (Behaviour)gameObject.GetComponent("Halo");
-        halo.enabled = enabled;
+        halo.enabled = true;
         if(timeleft == 0)
         {
             halo.enabled = enabled;
