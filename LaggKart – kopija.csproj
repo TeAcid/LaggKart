@@ -241,6 +241,7 @@
     <Compile Include="Assets\dreamlo\dreamloPromoCode.cs" />
     <Compile Include="Assets\dreamlo\LeaderBoardSample.cs" />
     <Compile Include="Assets\FollowRace.cs" />
+    <Compile Include="Assets\GameModes.cs" />
     <Compile Include="Assets\HindView.cs" />
     <Compile Include="Assets\Importi\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
     <Compile Include="Assets\minimap.cs" />
@@ -253,6 +254,8 @@
     <Compile Include="Assets\Scripts\Collision_detection.cs" />
     <Compile Include="Assets\Scripts\DisplayGameTimeChange.cs" />
     <Compile Include="Assets\Scripts\LapCounter.cs" />
+    <Compile Include="Assets\Scripts\LifePoints_E.cs" />
+    <Compile Include="Assets\Scripts\LifePoints_P.cs" />
     <Compile Include="Assets\Scripts\MainMenu\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\MainMenu\ApplicationManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu\ChangeColor.cs" />
@@ -268,11 +271,19 @@
     <Compile Include="Assets\Scripts\MainMenu\ShowSliderValue.cs" />
     <Compile Include="Assets\Scripts\MainMenu\TiltWindow.cs" />
     <Compile Include="Assets\Scripts\Offroad.cs" />
+    <Compile Include="Assets\Scripts\Player_checkpoints.cs" />
+    <Compile Include="Assets\Scripts\Powerup_rotation.cs" />
+    <Compile Include="Assets\Scripts\Powerups.cs" />
+    <Compile Include="Assets\Scripts\Powerups_collision.cs" />
+    <Compile Include="Assets\Scripts\Poweup_shield.cs" />
     <Compile Include="Assets\Scripts\Rocket_collision.cs" />
     <Compile Include="Assets\Sport Car - 3D model\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Sport Car - 3D model\Scripts\LightEffects.cs" />
+    <Compile Include="Assets\Star_rocket_PU.cs" />
+    <Compile Include="Assets\Username.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\HQ Tools Nails\Readme.txt" />
     <None Include="Assets\Importi\Lava_Flowing_Shader\ReadMe.txt" />
     <None Include="Assets\Importi\Lava_Flowing_Shader\Shaders\Diffuse_Lava_Distort.shader" />
     <None Include="Assets\Importi\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort.shader" />

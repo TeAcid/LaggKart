@@ -4,15 +4,22 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Car
-  - Proga
+  - nails
+  - rocketE
   - rocket
-  - Terrain
-  - RaceCamera
-  - CameraFollow
+  - PU_star
+  - Star_rocket
+  - PU_rocket
+  - PU_shield
+  - PU_fake
+  - PU_nails
+  - FirstAid
+  - Proga
   - HindCamera
-  - HindCameraView
+  - Terrain
+  - CameraFollow
   - AltCamera
+  - Enemy
   layers:
   - Default
   - TransparentFX

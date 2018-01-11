@@ -17,7 +17,7 @@ public class Collision_detection : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "rocket")
+        if (other.gameObject.tag == "rocket" || other.gameObject.tag == "Star_rocket")
         {
             Debug.Log("boom");
             var exp = (GameObject)Instantiate(Explosion, this.transform.position, this.transform.rotation);

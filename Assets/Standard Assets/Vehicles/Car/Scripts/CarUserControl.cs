@@ -16,6 +16,7 @@ namespace UnityStandardAssets.Vehicles.Car
             m_Car = GetComponent<CarController>();
         }
 
+        public int LifePoints = 100;
 
         private void FixedUpdate()
         {

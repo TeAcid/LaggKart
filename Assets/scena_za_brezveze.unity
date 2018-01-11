@@ -5293,7 +5293,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 496793945}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 572.5, y: 269.5, z: 0}
+  m_LocalPosition: {x: 574, y: 267.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 912761189}
@@ -7089,9 +7089,10 @@ GameObject:
   - component: {fileID: 635696492}
   - component: {fileID: 635696494}
   - component: {fileID: 635696493}
+  - component: {fileID: 635696495}
   m_Layer: 0
   m_Name: RivalCar
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7139,8 +7140,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f700c1a19a1814479265aab7950e401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: {fileID: 1294895593}
+  easyPath: {fileID: 0}
+  mediumPath: {fileID: 0}
+  hardPath: {fileID: 0}
   maxSteerAngle: 40
+  Difficulty: 0
   wheelFL: {fileID: 2122655078}
   wheelFR: {fileID: 56638888}
   wheelRL: {fileID: 2071696093}
@@ -7166,6 +7170,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Explosion: {fileID: 159918, guid: a0040bf7072bc2f4e82d887d50a9c5e2, type: 2}
+  start_timer: 0
+  nailz: 0
+  roket: 0
+  shield: 0
+  lp_enemy: {fileID: 0}
+  lp_player: {fileID: 0}
+--- !u!114 &635696495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 635696490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95a04f2e051a7b40b7206126bc67cc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lp_player: {fileID: 0}
+  enemy: {fileID: 0}
+  Rocket: {fileID: 0}
+  rocket_spawn: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &635746598 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 157746, guid: 3ece98cef98dc3a48a6beb9c58333554, type: 2}
@@ -19635,6 +19661,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af867e8903320644bb8db63f617811c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1984467087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984467083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95a04f2e051a7b40b7206126bc67cc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lp_player: {fileID: 0}
+  enemy: {fileID: 0}
+  Rocket: {fileID: 0}
+  rocket_spawn: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1984467088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19666,7 +19708,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1984467083}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f170a9334e3fb340aa09ceb0b4b77ea, type: 3}
   m_Name: 
@@ -19675,6 +19717,126 @@ MonoBehaviour:
   rocket_spawn: {fileID: 4513831165290302, guid: 639b9105322eb3a4cba4ecc65179e887,
     type: 2}
   Player: {fileID: 1984467083}
+--- !u!114 &1984467091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984467083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f72ff5f1f2fec489fffb0fc1a7e4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Explosion: {fileID: 0}
+--- !u!114 &1984467092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984467083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ed4b26aa7155844947f09240704ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Explosion: {fileID: 0}
+  start_timer: 0
+  nailz: 0
+  roket: 0
+  shield: 0
+  lp_enemy: {fileID: 0}
+  lp_player: {fileID: 0}
+--- !u!114 &1984467093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984467083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4b2e1ff600d3340bcd19b6b4546d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  enemy: {fileID: 0}
+  shield: {fileID: 0}
+  nails: {fileID: 0}
+  fake: {fileID: 0}
+  rocket: {fileID: 0}
+  star_rocket: {fileID: 0}
+--- !u!114 &1984467094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984467083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efed2aac098c6514c9850f420066027a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  power_ups: []
+  powerup: {fileID: 0}
+  warzone: {fileID: 0}
+  startTimer: 0
+  position: 0
+  gm: {fileID: 0}
+  counter: -1
+--- !u!114 &1984467095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984467083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea7a26b420ad7864b9334060959af030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  username: 
+--- !u!122 &1984467096
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984467083}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4286611584
+  m_Size: 10
+--- !u!114 &1984467097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984467083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31b55a7623d8f1842a2d733f2cc9d5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeAttack: 1
+  Warzone: 0
+  Head2Head: 0
+  StandardGame: 0
+  GameTimer: 1
+  cas: 0
+  time_left: 600
+  lp_enemy: {fileID: 0}
+  lp_player: {fileID: 0}
+  chP: {fileID: 0}
+  rl: {fileID: 0}
+  pu: {fileID: 0}
+  enemy: {fileID: 0}
+  powerup: {fileID: 0}
+  warzone: {fileID: 0}
+  rb: {fileID: 0}
+  gameover: 0
+  zapis: 
+  counter: 0
 --- !u!1 &1993462500
 GameObject:
   m_ObjectHideFlags: 0

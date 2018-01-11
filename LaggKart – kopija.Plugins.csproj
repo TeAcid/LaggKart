@@ -284,6 +284,7 @@
     <Compile Include="Assets\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\HQ Tools Nails\Readme.txt" />
     <None Include="Assets\Importi\Lava_Flowing_Shader\ReadMe.txt" />
     <None Include="Assets\Importi\Lava_Flowing_Shader\Shaders\Diffuse_Lava_Distort.shader" />
     <None Include="Assets\Importi\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort.shader" />

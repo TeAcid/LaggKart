@@ -27,7 +27,7 @@ public class AI_Driving : MonoBehaviour {
     public Vector3 centerOfMass;
     public bool isBreaking = false;
     [Header("Sensors")]
-    public float sensorLength = 10f;
+    public float sensorLength = 5f;
     public float frontSideSensorPosition = 2f;
     public float frontSensorAngle = 30f;
     private bool avoiding = false;

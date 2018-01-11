@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
@@ -33,3 +34,37 @@ Global
 		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
+=======
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart", "LaggKart.csproj", "{69652A3E-A718-2380-43DB-FFE1D793B568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart.Plugins", "LaggKart.Plugins.csproj", "{14CED30A-C0CC-9380-BE7A-F2CF23757674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaggKart.Editor.Plugins", "LaggKart.Editor.Plugins.csproj", "{06007E3E-D1ED-1A46-78D6-44FFAD476265}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69652A3E-A718-2380-43DB-FFE1D793B568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69652A3E-A718-2380-43DB-FFE1D793B568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69652A3E-A718-2380-43DB-FFE1D793B568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69652A3E-A718-2380-43DB-FFE1D793B568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14CED30A-C0CC-9380-BE7A-F2CF23757674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14CED30A-C0CC-9380-BE7A-F2CF23757674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14CED30A-C0CC-9380-BE7A-F2CF23757674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14CED30A-C0CC-9380-BE7A-F2CF23757674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06007E3E-D1ED-1A46-78D6-44FFAD476265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06007E3E-D1ED-1A46-78D6-44FFAD476265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06007E3E-D1ED-1A46-78D6-44FFAD476265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06007E3E-D1ED-1A46-78D6-44FFAD476265}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
+>>>>>>> 7064471797e49e8d4e5eceb71c6a01be5811b5dc
